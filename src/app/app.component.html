@@ -1,0 +1,23 @@
+  <div class="container">
+    <section class="output">{{result}}</section>
+    <table>
+      <tbody >
+        <tr>
+          <td *ngFor="let item of ['+', '-', '*', '/']" (click)="getAction(item)">{{ item }}</td>
+        </tr>
+        <tr>
+          <td *ngFor="let item of [7, 8, 9]" (click)="getAction(item)">{{ item }}</td>
+          <td rowspan="4" class="equal" (click)="equal()">=</td>
+        </tr>
+        <tr>
+          <td *ngFor="let item of [4, 5, 6]" (click)="getAction(item)">{{ item }}</td>
+        </tr>
+        <tr>
+          <td *ngFor="let item of [1, 2, 3]" (click)="getAction(item)">{{ item }}</td>
+        </tr>
+        <tr>
+          <td *ngFor="let item of [0, '.']" (click)="getAction(item)">{{ item }}</td>
+          <td class="reset" (click)="reset()">AC</td>
+      </tbody>
+    </table>
+  </div>
