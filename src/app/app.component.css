@@ -35,9 +35,6 @@
               background-color: rgb(221, 81, 81);
               color: white;
           }
-          &.operators{
-              color:rgb(33, 129, 185) ;
-          }
       }
   }
 }
